@@ -1,0 +1,58 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.trash {
+  text-decoration: none;
+}
+
+.task-list a {
+  text-decoration: none;
+  color: grey;
+}
+
+.task-list a:hover {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+
+.task-container {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.add-task-link {
+  padding: 8px 10px;
+  background-color: #bcbec4;
+  border-radius: 10px;
+}
+
+
+.add-task-link a {
+  color: white;
+}
+
+.add-task-link:hover {
+  background-color: #acadaf;
+}
+
+.new-form {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.task-show {
+  text-align: center;
+  width: 20%;
+  margin: 30px auto;
+}
+
+.list-all-tasks {
+  margin: 20px auto ;
+}
+
+.body-index {
+  width: 300px;
+  margin: auto;
+}
+

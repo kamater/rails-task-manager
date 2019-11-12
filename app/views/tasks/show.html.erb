@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="task-show">
+    <h3><%= @task.title %></h3>
+    <p><%= @task.details %></p>
+    <%= link_to 'Edit this task', task_edit_path, class: 'btn btn-primary' %>
+    <%= link_to 'Cancel', tasks_path, class: 'btn btn-danger' %>
+  </div>
+</div>

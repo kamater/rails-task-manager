@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="body-index">
+    <h1>My tasks</h1>
+
+    <div class="list-all-tasks"></div>
+      <% @tasks.each do |task| %>
+      <p class="task-list">
+        <input type="checkbox" <%= task.completed ? 'checked' : nil %> disabled>
+        <%= link_to task.title, task_path(task) %>
+        <span class="trash"><%= link_to "🗑️", task_path(task), method: :delete, data: { confirm: "Are you sure?" } %></span></p>
+      <% end %>
+      <%= link_to 'Add a task', tasks_new_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+</div>
+
+
+
